@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="183.0" prefWidth="363.0" stylesheets="@test.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.DataController">
+   <children>
+      <Label fx:id="cols" layoutX="38.0" layoutY="97.0" text="Maze columns:" />
+      <TextField fx:id="textField_mazeColumns" layoutX="178.0" layoutY="93.0" prefHeight="25.0" prefWidth="113.0" text="10" />
+      <TextField fx:id="textField_mazeRows" layoutX="178.0" layoutY="54.0" prefHeight="25.0" prefWidth="113.0" text="10" />
+      <Button fx:id="generate" layoutX="127.0" layoutY="144.0" mnemonicParsing="false" onAction="#sendData" prefHeight="25.0" prefWidth="126.0" text="Generate Maze" />
+      <Label fx:id="headline" layoutX="79.0" layoutY="23.0" prefHeight="17.0" prefWidth="206.0" text="Please enter the maze size..." textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="cols1" layoutX="38.0" layoutY="57.0" text="Maze rows:" />
+   </children>
+</AnchorPane>

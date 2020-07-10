@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="222.0" prefWidth="429.0" stylesheets="@test.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PropertiesController">
+   <children>
+      <Label fx:id="headline" layoutX="43.0" layoutY="14.0" text="Please choose the properties of the maze...">
+         <font>
+            <Font name="Myanmar Text" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="search123" layoutX="24.0" layoutY="91.0" text="Searching algorithm type:" />
+      <Label fx:id="threads123" layoutX="26.0" layoutY="124.0" text="Number of threads:" />
+      <Label fx:id="generate123" layoutX="24.0" layoutY="58.0" text="Generator algorithm type:" />
+      <Button fx:id="apply" layoutX="158.0" layoutY="180.0" mnemonicParsing="false" onAction="#apply" prefHeight="25.0" prefWidth="101.0" text="Apply" />
+      <ChoiceBox id="generators" fx:id="generators" layoutX="260.0" layoutY="54.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ChoiceBox>
+      <ChoiceBox id="searchers" fx:id="searchers" layoutX="260.0" layoutY="88.0" prefWidth="150.0" />
+      <ChoiceBox id="threads" fx:id="threads" layoutX="260.0" layoutY="121.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
